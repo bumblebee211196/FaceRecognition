@@ -1,6 +1,6 @@
 # FaceRecognition
 
-A simple Face Recognition application using python, opencv and face-recognition
+A simple Face Recognition application using python, opencv and face-recognition. For detail explanation check out my [blog].
 
 This was possible only due to the simple and clear explanation by Adrian Rosebrock's [blog](https://www.pyimagesearch.com/2018/06/18/face-recognition-with-opencv-python-and-deep-learning/)
 
