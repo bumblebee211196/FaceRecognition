@@ -10,6 +10,7 @@ import argparse
 import pickle
 
 import cv2
+import dlib
 import face_recognition
 import numpy as np
 
@@ -20,6 +21,7 @@ parser.add_argument('-i', '--image', help='Path to the Image file', required=Tru
 parser.add_argument('-m', '--model', help='Face detection method, `hog` or `cnn`. Use `cnn` if GPU is available.', default='hog')
 args = vars(parser.parse_args())
 
+print('dlib will use GPU:', dlib.DLIB_USE_CUDA)
 
 def detect_face(image):
     locations = face_recognition.face_locations(image, model=args['model'])
